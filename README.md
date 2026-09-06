@@ -1,6 +1,5 @@
 # Voice Study Buddy 🎓🎙️
-
-**Tagline:** "Ask. Listen. Learn."
+"Ask. Listen. Learn."
 
 ## Overview
 
