@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voice Study Buddy</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>🎓 Voice Study Buddy</h1>
+      <p class="tagline">Ask. Listen. Learn.</p>
+    </header>
+
+    <section class="panel">
+      <p class="hint">Ask anything about your studies</p>
+
+      <div class="status-row">
+        <div id="speakingIndicator" class="indicator hidden">
+          <span class="pulse">🔊</span>
+          <span>AI is speaking...</span>
+        </div>
+        <div id="listeningIndicator" class="indicator hidden">
+          <span class="pulse">🎙️</span>
+          <span>Listening...</span>
+        </div>
+        <div id="loadingIndicator" class="indicator hidden">
+          <span class="spinner"></span>
+          <span>Thinking...</span>
+        </div>
+      </div>
+
+      <button id="interruptBtn" class="interrupt-btn hidden">🛑 INTERRUPT</button>
+
+      <div id="conversation" class="conversation"></div>
+
+      <div id="errorBox" class="error-box hidden"></div>
+
+      <button id="micBtn" class="mic-btn">🎤 ASK QUESTION</button>
+    </section>
+
+    <footer class="footer">
+      <span>Rime Status: <span id="rimeStatus" class="status-dot">● Checking...</span></span>
+      <span>Interruptions: <span id="interruptionCount">0</span></span>
+    </footer>
+  </main>
+
+  <audio id="audioPlayer" hidden></audio>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
